@@ -1,0 +1,21 @@
+name: WorldTeleporter
+version: 1.0.0
+api: 3.0.0
+main: InspectorGadget\WorldTeleporter\Handler
+author: InspectorGadget
+
+commands:
+  world:
+    permission: world.command
+    description: "Main Command for WorldTeleporter"
+    children:
+      help:
+        description: "Help Command for WorldTeleporter"
+      list:
+        description: "Lists all worlds"
+      tp:
+        description: "Teleport"
+
+permissions:
+  world.command:
+    default: op
